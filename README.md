@@ -3,7 +3,6 @@
 This publication describes a standard structure suitable for all PHP projects.
 
 ## Summary
-#
 
 ### **Root-level directories:**
 
