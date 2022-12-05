@@ -2,7 +2,7 @@
 
 This publication describes a standard structure suitable for all PHP projects.
 
-Command-line tools for `validating` or `generating` PDS conform projects which are included with this standard are documented [here](./docs/tools.md).
+<!-- Command-line tools for `validating` or `generating` projects which are included with this standard are documented [here](./docs/tools.md). -->
 
 ## Summary
 #
