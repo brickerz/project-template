@@ -2,8 +2,6 @@
 
 This publication describes a standard structure suitable for all PHP projects.
 
-<!-- Command-line tools for `validating` or `generating` projects which are included with this standard are documented [here](./docs/tools.md). -->
-
 ## Summary
 #
 
@@ -18,7 +16,7 @@ The project may contain other root-level directories for purposes not described 
 | `bin/`                     | Command-line executables                        |
 | `config/`                  | Configuration files                             |
 | `docs/`                    | Documentation files                             |
-| `public/`                  | Web server files, This directory may be intended as a web server document root. Alternatively, it may be that the files will be served dynamically via other code, copied or symlinked to the "real" document root, or otherwise managed so that they become publicly available on the web.  |
+| `public/`                  | Web server files, this directory may be intended as a web server document root. Alternatively, it may be that the files will be served dynamically via other code, copied or symlinked to the "real" document root, or otherwise managed so that they become publicly available on the web.  |
 | `vendor/`                  | 3rd party code                                  |
 | `src/`                     | PHP source code                                 |
 | `tests/`                   | Test code                                       |
@@ -39,3 +37,17 @@ The project may contain other root-level files for purposes not described in thi
 
 <!-- # -->
 <!-- ### **Source code structure:** -->
+
+### **Source code:**
+#
+
+This post does not indicate any rules to structure your code, but here are some recommendations...
+
+- Use an autoloader
+- Use object oriented programming
+- Use MVC (Model - View - Controller) design pattern.
+- If you are developing the backend and frontend of a project, here are two ways to go about it:
+    
+    - One approach is to make the front pages in the Views folder, this way the backend and frontend are dependent on each other, it's much harder to switch technologies in the future.
+
+    - The other approach is to make a backend API that will be consumed by the frontend, this last option is more flexible, because your frontend and backend are not dependent on each other.
